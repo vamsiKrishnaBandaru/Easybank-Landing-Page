@@ -5,6 +5,9 @@ body {
   margin: 0;
 }
 /* header elements */
+.mobileHeader {
+  display: none;
+}
 header {
   display: flex;
   align-items: center;
@@ -190,6 +193,7 @@ button:hover {
 .text {
   height: 50%;
   display: flex;
+  text-align: left;
   flex-direction: column;
   margin: 38px;
   margin-top: 10px;
@@ -198,7 +202,12 @@ button:hover {
 .card p {
   color: #989aa7;
   font-size: 13px;
-  margin: 0;
+  margin-top: 1px;
+}
+.author {
+  color: #989aa7;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 .card h4 {
   margin: 0;
@@ -233,13 +242,17 @@ footer .logos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 footer .media {
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: space-between;
+}
+footer .media img:hover {
+  cursor: pointer;
+  stroke: aquamarine;
 }
 
 .support li {
@@ -269,59 +282,64 @@ footer .footerLeft div {
 /* for mobile */
 
 @media (max-width: 700px) {
-  header {
-    display: none;
-  }
+  /* header of page */
   header {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     background-color: white;
+    margin-bottom: 15px;
+    margin-right: 20px;
   }
+
   header .logo {
-    padding: 0;
     margin: 0;
+    margin-right: 160px;
   }
+
   header .hamburger {
-    border: 1px solid red;
     margin: 0;
+    display: block;
   }
-  header .menu {
-    display: none;
-  }
+
+  header .menu,
   header button {
     display: none;
   }
 
+  /* main page  */
   .mainTitle {
     flex-direction: column-reverse;
+    width: 100%;
     background: none;
     height: 80vh;
-    margin: 0;
-    padding: 0;
     align-items: center;
-    justify-content: space-between;
     align-self: center;
     text-align: center;
     background: url(./images/bg-intro-mobile.svg) no-repeat;
-    background-position-y: -20px;
+    background-position: top right;
+    background-size: 390px;
+    background-position-y: -30px;
+  }
+  .cropped {
+    transform: translateY(-13px);
   }
 
   .page-1 {
-    height: 40%;
+    height: 35%;
     width: 95%;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .page-1 button {
     margin: 0;
   }
   .page-1 h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
   .page-1 p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .cropped img {
     transform: none;
