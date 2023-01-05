@@ -10,12 +10,13 @@ header {
   align-items: center;
   justify-content: space-evenly;
   background-color: white;
-  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 /* easybank img */
 header .logo {
   padding: 0;
-  margin-left: -38%;
+  margin-left: -30%;
 }
 
 .menuBack,
@@ -61,7 +62,7 @@ button {
 
 header button {
   margin-bottom: 10px;
-  margin-left: 130%;
+  margin-right: -120px;
 }
 
 button:hover {
