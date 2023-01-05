@@ -289,7 +289,9 @@ footer .footerLeft div {
     justify-content: space-evenly;
     flex-direction: row-reverse;
     background-color: white;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
   }
   section .menuBack {
     display: flex;
@@ -361,13 +363,12 @@ footer .footerLeft div {
   header .logo {
     margin: 0;
     margin-left: -60px;
-    margin-bottom: 0;
   }
   header .hamburger {
     background: none;
     margin: 0;
     margin-top: -10px;
-    margin-left: 100px;
+    margin-left: 120px;
     width: 20%;
     display: block;
   }
@@ -390,10 +391,8 @@ footer .footerLeft div {
     background-position: top right;
     background-size: 390px;
     background-position-y: -30px;
-    margin-top: 0;
   }
   .cropped {
-    margin-top: 0;
     transform: translateY(-13px);
   }
   .hidePage {
