@@ -8,14 +8,14 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: white;
   padding-top: 20px;
 }
 /* easybank img */
 header .logo {
   padding: 0;
-  margin-left: -400px;
+  margin-left: -33%;
 }
 
 .menuBack,
@@ -282,7 +282,7 @@ footer .footerLeft div {
 
 /* for mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   /* header of page */
   header {
     display: flex;
@@ -298,7 +298,7 @@ footer .footerLeft div {
     justify-content: center;
     background-color: white;
     width: 85%;
-    height: 43%;
+    height: 40%;
     margin-left: 30px;
     margin-top: 20px;
     border-radius: 5px;
@@ -312,34 +312,35 @@ footer .footerLeft div {
     display: none;
     background-color: white;
     border: 1px solid white;
-    height: 90vh;
+    height: 87vh;
     margin: 0;
+    margin-bottom: -10%;
   }
 
   .page1-1 {
     width: 100%;
     height: 40%;
     text-align: center;
-    margin-left: 10px;
-    margin-top: 60px;
     margin: 0;
     padding: 0;
     display: block;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(217, 217, 228);  */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
   }
   .page1-1 button {
-    align-self: center;
-    width: 25%;
-    margin-left: 40%;
+    margin: 0;
   }
   .page1-1 p {
+    width: 95%;
+    font-size: 16px;
     color: #989aa7;
   }
 
   .page1-1 h1 {
-    margin-top: 30px;
     color: #1f2231;
     font-weight: 350;
     font-size: 40px;
@@ -460,20 +461,16 @@ footer .footerLeft div {
   .cards {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
     align-self: center;
     width: 100%;
     margin: 0;
-  }
-  .cards {
-    flex-direction: column;
   }
   .card {
     width: 85%;
     box-shadow: 0 2px 10px rgba(112, 112, 112, 0.1);
     margin: 8px;
-  }
-  .cards {
-    justify-content: center;
   }
 
   /* footer section for mobile */
