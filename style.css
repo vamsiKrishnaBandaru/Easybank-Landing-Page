@@ -5,9 +5,6 @@ body {
   margin: 0;
 }
 /* header elements */
-.mobileHeader {
-  display: none;
-}
 header {
   display: flex;
   align-items: center;
@@ -45,7 +42,6 @@ header li:hover {
 }
 
 /* request invite button */
-
 button {
   color: white;
   font-size: 15px;
@@ -284,20 +280,65 @@ footer .footerLeft div {
   /* header of page */
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
     background-color: white;
-    margin-bottom: 15px;
-    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  section .pop {
+    /* background-image: red; */
+  }
+  section .dropdown {
+  }
+  section .menuBack {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 85%;
+    height: 90%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 10px;
+  }
+  .popMenu {
+    background: url(./images/bg-intro-mobile.svg) no-repeat;
+    background-size: 390px;
+    background-position-y: -30px;
+    background-position: top right;
+    display: none;
+    background-color: white;
+    border: 1px solid red;
+    margin-bottom: 100px;
+    height: 35vh;
+  }
+  .popMenu li {
+    display: block;
+    text-align: center;
+    color: black;
+    font-weight: 10;
+    margin-top: 10px;
+  }
+  /*   
+  button {
+
+    border: 1px solid red;
+  } */
+
+  .show {
+    display: block;
   }
 
   header .logo {
     margin: 0;
-    margin-right: 160px;
+    margin-left: -280px;
   }
-
   header .hamburger {
+    background: none;
     margin: 0;
+    margin-top: -10px;
+    margin-right: -140px;
+    width: 20%;
     display: block;
   }
 
