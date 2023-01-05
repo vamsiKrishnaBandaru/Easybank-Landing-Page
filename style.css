@@ -15,10 +15,16 @@ header {
 /* easybank img */
 header .logo {
   padding: 0;
-  margin-left: 120px;
+  margin-left: -400px;
 }
-header .hamburger {
+
+.menuBack,
+.page1-1,
+.hamburger {
   display: none;
+}
+.menu {
+  margin-left: -200px;
 }
 /* menu section */
 header ul {
@@ -285,17 +291,14 @@ footer .footerLeft div {
     background-color: white;
     margin-bottom: 5px;
   }
-  section .pop {
-    /* background-image: red; */
-  }
-  section .dropdown {
-  }
   section .menuBack {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 10px 20px rgba(73, 93, 109, 0.19), 0 6px 6px rgba(77, 66, 107, 0.23);
+    justify-content: center;
     background-color: white;
     width: 85%;
-    height: 90%;
+    height: 43%;
     margin-left: 30px;
     margin-top: 20px;
     border-radius: 5px;
@@ -308,22 +311,40 @@ footer .footerLeft div {
     background-position: top right;
     display: none;
     background-color: white;
-    border: 1px solid red;
-    margin-bottom: 100px;
-    height: 35vh;
+    border: 1px solid white;
+    height: 90vh;
+    margin: 0;
+  }
+
+  .page1-1 {
+    height: 50%;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 60px;
+    display: block;
+    /* background-color: rgb(217, 217, 228);  */
+  }
+  .page1-1 button {
+    margin-left: 100px;
+  }
+  .page1-1 p {
+    color: #989aa7;
+  }
+
+  .page1-1 h1 {
+    margin-top: 30px;
+    color: #1f2231;
+    font-weight: 350;
+    font-size: 40px;
+    margin-bottom: 0px;
   }
   .popMenu li {
     display: block;
     text-align: center;
     color: black;
     font-weight: 10;
-    margin-top: 10px;
+    margin-top: 15px;
   }
-  /*   
-  button {
-
-    border: 1px solid red;
-  } */
 
   .show {
     display: block;
@@ -331,13 +352,13 @@ footer .footerLeft div {
 
   header .logo {
     margin: 0;
-    margin-left: -280px;
+    margin-left: -60px;
   }
   header .hamburger {
     background: none;
     margin: 0;
     margin-top: -10px;
-    margin-right: -140px;
+    margin-left: 100px;
     width: 20%;
     display: block;
   }
